@@ -1,0 +1,15 @@
+{
+    "userData": {
+        "username": "david.gray.1",
+        "password": "david123*"
+    },
+    "customerData": {
+        "name": "David Samuel Gray",
+        "firstName" : "David",
+        "country": "Bolivia",
+        "city": "Santa Cruz",
+        "creditCard": "4242424242424242*",
+        "month": "07",
+        "year": "2033"
+    }
+}

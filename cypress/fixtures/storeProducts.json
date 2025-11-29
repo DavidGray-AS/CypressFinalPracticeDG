@@ -1,0 +1,11 @@
+{
+    "phones": {
+        "samsungS6": "Samsung galaxy s6"
+    },
+    "laptops": {
+        "macBookAir": "MacBook air"
+    },
+    "monitors": {
+        "appleMonitor": "Apple monitor 24"
+    }
+}

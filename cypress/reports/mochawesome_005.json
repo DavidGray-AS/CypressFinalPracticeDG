@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-20T22:09:54.642Z",
+    "end": "2025-11-20T22:09:54.734Z",
+    "duration": 92,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c0cec813-b737-4b96-a95f-5767044f6fff",
+      "title": "",
+      "fullFile": "cypress\\e2e\\feature\\testhook.cy.js",
+      "file": "cypress\\e2e\\feature\\testhook.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5794c92b-df8e-4104-9b25-882bb3d6a1c4",
+          "title": "Hook test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test 1",
+              "fullTitle": "Hook test Test 1",
+              "timedOut": null,
+              "duration": 43,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('Test 1 David Gray');",
+              "err": {},
+              "uuid": "a70c49fa-2b3e-4665-af38-44ab4e985de2",
+              "parentUUID": "5794c92b-df8e-4104-9b25-882bb3d6a1c4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test 2",
+              "fullTitle": "Hook test Test 2",
+              "timedOut": null,
+              "duration": 11,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('Test 2 David');",
+              "err": {},
+              "uuid": "4d791ad4-e1c2-4829-b0f8-9c9d42b70e84",
+              "parentUUID": "5794c92b-df8e-4104-9b25-882bb3d6a1c4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a70c49fa-2b3e-4665-af38-44ab4e985de2",
+            "4d791ad4-e1c2-4829-b0f8-9c9d42b70e84"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 54,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

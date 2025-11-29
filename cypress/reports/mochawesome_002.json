@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-11-20T22:09:39.804Z",
+    "end": "2025-11-20T22:09:47.451Z",
+    "duration": 7647,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cf6c1ef3-908e-48e6-b565-45273fc0d147",
+      "title": "",
+      "fullFile": "cypress\\e2e\\feature\\loginTest.cy.js",
+      "file": "cypress\\e2e\\feature\\loginTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6910cd93-9575-476b-a1e1-2589391d10f0",
+          "title": "Successful login test ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case 01",
+              "fullTitle": "Successful login test  Test Case 01",
+              "timedOut": null,
+              "duration": 5705,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('user').then(user => {\n  cy.visit(\"https://www.saucedemo.com\");\n  cy.get('#user-name').type('user.standard_user.username');\n  cy.get('#user-name').should('have.value', 'standar_user');\n  cy.get('#password').type('user.standard_user.passwod');\n  cy.get('#login-button').click();\n  cy.url().should('include', '/inventory.html');\n  cy.contains('Products');\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<input#user-name.input_error.form_input>' to have value 'standar_user', but the value was 'user.standard_user.username'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<input#user-name.input_error.form_input>' to have value 'standar_user', but the value was 'user.standard_user.username'\n    at Context.eval (webpack://cursocypress/./cypress/e2e/feature/loginTest.cy.js:9:33)\n    at getRet (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:122341:20)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:122352:66)\n    at Context.then (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:122603:21)\n    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:145681:19)",
+                "diff": "- 'user.standard_user.username'\n+ 'standar_user'\n"
+              },
+              "uuid": "3406367f-dfa2-45e2-8bb3-8539735ce684",
+              "parentUUID": "6910cd93-9575-476b-a1e1-2589391d10f0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3406367f-dfa2-45e2-8bb3-8539735ce684"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5705,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "Items": [
+    {
+        "cat": "notebook",
+        "desc": "I hope this phone Description is good enough",
+        "id": 8,
+        "img": "imgs/sony_vaio_5.jpg",
+        "price": 777.0,
+        "title": "David's Laptop"
+    }
+]
+}
